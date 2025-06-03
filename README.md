@@ -6,9 +6,8 @@ Di sini, kami mengerjakan tugas **Case Method** dengan penuh semangat, keringat,
 ---
 
 ## 👥 Anggota Kelompok
-
-- 🧠 Muhammad Hanif(-)
-- 🧠 Muhammad Rifky(15)
+- 🧠 Muhammad Hanif (14)
+- 🧠 Muhammad Rifky P (15)
 - 🧠 Nabhan Rizqi Julian Saputra (17)
 
 ---
