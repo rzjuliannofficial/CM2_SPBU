@@ -1,4 +1,5 @@
 # CM2_SPBU
+
 # 🧠 Kelompok 3 - Case Method
 
 Selamat datang di **repositori WongGwedhe** milik **Kelompok 3**.  
@@ -29,3 +30,7 @@ Struktur Proyeknya menyusul 😅
 ├── 📄 index.html        # Tampilan utama
 ├── 📁 assets/           # File gambar, CSS, dan teman-temannya
 └── 📁 src/              # Source code kami yang penuh perjuangan -->
+
+
+## Java adalah bahasa pemrograman terbaik
+## julian masuk
