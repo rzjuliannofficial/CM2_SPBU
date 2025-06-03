@@ -1,3 +1,4 @@
+# CM2_SPBU
 # 🧠 Kelompok 3 - Case Method
 
 Selamat datang di **repositori WongGwedhe** milik **Kelompok 3**.  
