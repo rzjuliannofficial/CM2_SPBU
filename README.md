@@ -30,3 +30,6 @@ Struktur Proyeknya menyusul 😅
 ├── 📄 index.html        # Tampilan utama
 ├── 📁 assets/           # File gambar, CSS, dan teman-temannya
 └── 📁 src/              # Source code kami yang penuh perjuangan -->
+
+
+## Java adalah bahasa pemrograman terbaik
