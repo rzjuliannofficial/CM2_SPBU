@@ -31,7 +31,6 @@ public class AntrianLayananQueue03 {
 
     public void enqueue( TransaksiPengisian03 data) {
         if (isFull()) {
-            System.out.println("Antrian sudah penuh, tidak bisa menambahkan transaksi baru.");
             return;
         }
         rear = (rear + 1) % max;
@@ -39,5 +38,15 @@ public class AntrianLayananQueue03 {
         size++;
     }
 
-    
+    public void printRiwayatTransaksi() {
+        if (isEmpty()) {
+            System.out.println("Riwayat transaksi kosong.");
+            return;
+        }
+        System.out.printf("%-15s %-15s\n", "Plat Nomor", "Total Bayar");
+        for (int i = 0; i < size; i++) {
+            int index = (front + i) % max;
+            data[index].TampilkanTranskasi();
+        }
+    }
 }

@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class MainSPBU03 {
     public static void main(String[] args) {
         AntrianSLL03 sll = new AntrianSLL03();
-        AntrianLayananQueue03 queue = new AntrianLayananQueue03(3);
+        AntrianLayananQueue03 queue = new AntrianLayananQueue03(50);
         Scanner sc03 = new Scanner(System.in);
         int pilihan;
         do {
@@ -38,8 +38,16 @@ public class MainSPBU03 {
                     sll.getSize();
                 }
                 case 4 -> {
+                    Kendaraan03 dilayani = sll.layani();
+                    if (queue.isEmpty()) {
+                        System.out.println("Tidak ada kendaraan yang bisa dilayani.");
+                        break;
+                    } else if (queue.isFull()) {
+                        System.out.println("Antrian layanan sudah penuh.");
+                        break;
+                    }
                     System.out.println("=== Layani Kendaraan ===");
-                    System.out.println("Petugas Melayani "+ sll.head.kendaraan.platNomor);
+                    System.out.println("Petugas Melayani "+ dilayani.platNomor);
                     System.out.print("Masukkan Jenis BBM: ");
                     String jenisBBM = sc03.nextLine();
                     System.out.print("Masukkan Harga per Liter: ");
@@ -47,11 +55,12 @@ public class MainSPBU03 {
                     System.out.print("Masukkan Jumlah Liter: ");
                     double liter = sc03.nextDouble();
                     sc03.nextLine(); 
-                    queue.enqueue(new TransaksiPengisian03(sll.head.kendaraan, new BBM03(jenisBBM, hargaPerLiter), liter));
+                    queue.enqueue(new TransaksiPengisian03(dilayani, new BBM03(jenisBBM, hargaPerLiter), liter));
                     System.out.println("Transaksi berhasil ditambahkan ke antrian layanan.");
                 }
                 case 5 -> {
-                  
+                    System.out.println("=== Riwayat Transaksi Pengisian BBM ===");
+                    queue.printRiwayatTransaksi();
                 }
                 case 0 -> {
                     System.out.println("Terima kasih telah menggunakan layanan kami!");

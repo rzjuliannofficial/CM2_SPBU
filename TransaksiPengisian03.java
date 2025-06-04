@@ -12,7 +12,6 @@ public class TransaksiPengisian03 {
     }
 
     public void TampilkanTranskasi(){
-        System.out.printf("%-15s %-15s\n", "Plat Nomor", "Total Bayar");
         System.out.printf("%-15s Rp. %.2f\n", kendaraan.platNomor, totalBayar);
     }
 }
