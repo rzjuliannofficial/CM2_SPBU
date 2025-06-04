@@ -47,9 +47,9 @@ public class AntrianSLL03 {
             return null;
         } else {
             Node03 temp = head;
-            head = head.next; // Pindahkan head ke node berikutnya
+            head = head.next; 
             size--;
-            return temp.kendaraan; // Kembalikan kendaraan dari node yang dilayani
+            return temp.kendaraan; 
         }
     }
 }

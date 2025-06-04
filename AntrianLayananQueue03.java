@@ -29,7 +29,7 @@ public class AntrianLayananQueue03 {
         }
     }
 
-    public void enqueue( TransaksiPengisian03 data) {
+    public void enqueue(TransaksiPengisian03 data) {
         if (isFull()) {
             return;
         }
