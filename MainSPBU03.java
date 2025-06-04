@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main03 {
+public class MainSPBU03 {
     public static void main(String[] args) {
         AntrianSLL03 sll = new AntrianSLL03();
         AntrianLayananQueue03 queue = new AntrianLayananQueue03(3);
@@ -51,7 +51,7 @@ public class Main03 {
                     System.out.println("Transaksi berhasil ditambahkan ke antrian layanan.");
                 }
                 case 5 -> {
-                    TransaksiPengisian03 transaksi = new TransaksiPengisian03(null, null, 0);
+                  
                 }
                 case 0 -> {
                     System.out.println("Terima kasih telah menggunakan layanan kami!");

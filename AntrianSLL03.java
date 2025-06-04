@@ -42,13 +42,13 @@ public class AntrianSLL03 {
         System.out.println("Jumlah Antrian: " + size);
     }
 
-    Kendaraan03 layani() {
-        if (isEmpty()) {
-            System.out.println("Antrian kosong, tidak ada kendaraan yang bisa dilayani.");
-            return null;
-        } else {
-            Node temp = head;
+    // Kendaraan03 layani() {
+    //     if (isEmpty()) {
+    //         System.out.println("Antrian kosong, tidak ada kendaraan yang bisa dilayani.");
+    //         return null;
+    //     } else {
+    //         Node temp = head;
             
-        }
-    }
+    //     }
+    // }
 }
