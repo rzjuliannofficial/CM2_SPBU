@@ -4,6 +4,6 @@ public class BBM03 {
 
     public BBM03(String namaBBM, double hargaPerliter) {
         this.namaBBM = namaBBM;
-        this.hargaPerliter = hargaPerliter;
+      
     }
 }
