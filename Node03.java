@@ -6,4 +6,6 @@ public class Node03 {
         this.kendaraan = kendaraan;
         this.next = null;
     }
+
+    
 }

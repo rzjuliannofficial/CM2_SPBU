@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class Main03 {
     public static void main(String[] args) {
-        
+        AntrianSLL03 sll = new AntrianSLL03();
+        AntrianLayananQueue03 queue = new AntrianLayananQueue03(3);
         Scanner sc03 = new Scanner(System.in);
         int pilihan;
-        
         do {
-            System.out.println("============= MENU SPBU  ============");
+            System.out.println("\n============= MENU SPBU  ============");
             System.out.println("1. Tambah Antrian");
             System.out.println("2. Tampilkan Antrian");
             System.out.println("3. Check Jumlah Antrian");
@@ -17,22 +17,41 @@ public class Main03 {
             System.out.println("======================================");
             System.out.print("Masukkan Pilihan Anda: ");
             pilihan = sc03.nextInt();
+            sc03.nextLine();
             System.out.println();
             switch (pilihan){
                 case 1 -> {
-                    System.out.println();
+                    System.out.println("=== Tambah Antrian Kendaraan ===");
+                    System.out.print("Masukkan Plat Nomor: ");
+                    String platNomor = sc03.nextLine();
+                    System.out.print("Masukkan Tipe Kendaraan: ");
+                    String tipe = sc03.nextLine();
+                    System.out.print("Masukkan Merk Kendaraan: ");
+                    String merk = sc03.nextLine();
+                    Kendaraan03 kendaraan = new Kendaraan03(platNomor, tipe, merk);
+                    sll.add(kendaraan);
                 }
                 case 2 -> {
-                    System.out.println();
+                    sll.print();
                 }
                 case 3 -> {
-                    System.out.println();
+                    sll.getSize();
                 }
                 case 4 -> {
-                    System.out.println();
+                    System.out.println("=== Layani Kendaraan ===");
+                    System.out.println("Petugas Melayani "+ sll.head.kendaraan.platNomor);
+                    System.out.print("Masukkan Jenis BBM: ");
+                    String jenisBBM = sc03.nextLine();
+                    System.out.print("Masukkan Harga per Liter: ");
+                    double hargaPerLiter = sc03.nextDouble();
+                    System.out.print("Masukkan Jumlah Liter: ");
+                    double liter = sc03.nextDouble();
+                    sc03.nextLine(); 
+                    queue.enqueue(new TransaksiPengisian03(sll.head.kendaraan, new BBM03(jenisBBM, hargaPerLiter), liter));
+                    System.out.println("Transaksi berhasil ditambahkan ke antrian layanan.");
                 }
                 case 5 -> {
-                    System.out.println();
+                    TransaksiPengisian03 transaksi = new TransaksiPengisian03(null, null, 0);
                 }
                 case 0 -> {
                     System.out.println("Terima kasih telah menggunakan layanan kami!");
