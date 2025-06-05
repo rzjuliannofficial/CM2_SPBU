@@ -39,13 +39,6 @@ public class MainSPBU03 {
                 }
                 case 4 -> {
                     Kendaraan03 dilayani = sll.layani();
-                    if (queue.isEmpty()) {
-                        System.out.println("Tidak ada kendaraan yang bisa dilayani.");
-                        break;
-                    } else if (queue.isFull()) {
-                        System.out.println("Antrian layanan sudah penuh.");
-                        break;
-                    }
                     System.out.println("=== Layani Kendaraan ===");
                     System.out.println("Petugas Melayani "+ dilayani.platNomor);
                     System.out.print("Masukkan Jenis BBM: ");
@@ -64,6 +57,7 @@ public class MainSPBU03 {
                 }
                 case 0 -> {
                     System.out.println("Terima kasih telah menggunakan layanan kami!");
+                    sc03.close();
                 }
                 default -> {
                     System.out.println("Pilihan tidak valid, silakan coba lagi.");
