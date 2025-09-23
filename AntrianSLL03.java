@@ -3,8 +3,7 @@ public class AntrianSLL03 {
     Node03 tail;
     int size;
     public AntrianSLL03() {
-        head = null;
-        tail = null;
+        head = tail = null;
     }
 
     public boolean isEmpty() {
